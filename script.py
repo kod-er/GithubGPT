@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import os
-import nest_asyncio
 from langchain.chat_models import ChatOpenAI
 
 
