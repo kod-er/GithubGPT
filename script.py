@@ -4,11 +4,10 @@ import os
 from langchain.chat_models import ChatOpenAI
 
 
+print(os.getcwd())
 from llama_index import LLMPredictor, PromptHelper, ServiceContext,SimpleDirectoryReader
 from llama_index import download_loader, GPTVectorStoreIndex
-from llama_index.readers.llamahub_modules.github_repo import GithubRepositoryReader, GithubClient
-# download_loader("GithubRepositoryReader")
-
+from llamahub_modules.github_repo import GithubRepositoryReader, GithubClient
 
 if 'response' not in st.session_state:
     st.session_state.response = ''
